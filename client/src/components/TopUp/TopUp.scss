@@ -1,0 +1,48 @@
+.topup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+    }
+    &__content{
+        background-color: #fff;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__input{
+        width: 250px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        font-weight: 600;
+        background-color: chartreuse;
+        color: #fff;
+        height: 35px;
+        border: none;
+        width: 150px;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+}

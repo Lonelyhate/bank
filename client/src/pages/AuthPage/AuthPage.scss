@@ -1,0 +1,105 @@
+.auth-page{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    &__content{
+        background-color: rgb(233, 231, 231);
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        align-items: center;
+        padding: 30px 0;
+    }
+    &__subtitle{
+        margin-bottom: 20px;
+    }
+    &__input{
+        width: 330px;
+        height: 40px;
+        background: #fff;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        outline: none;
+        border: 1px solid rgb(107, 107, 107);
+        color: #141414;
+        font-size: 14px;
+        transition: border-color 0.3s ease;
+        &:focus{
+            border-color: red;
+        }
+    }
+    &__login{
+        width: 330px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        background: linear-gradient(90deg,#ff4148 0,#ff793a);
+        margin-bottom: 15px;
+        &::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: -100%;
+            width: 100%;
+            height: 40px;
+            background-color: #000;
+            z-index: 2;
+            transition: top 0.3s ease;
+        }
+        &:hover{
+            &::after{
+                top: 0;
+            }
+        }
+        span{
+            position: relative;
+            z-index: 3;
+        }
+    }
+    &__error{
+        margin-bottom: 10px;
+    }
+    &__btn{
+        width: 330px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        background: #1896e6;
+        &::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: -100%;
+            width: 100%;
+            height: 40px;
+            background-color: #000;
+            z-index: 2;
+            transition: top 0.3s ease;
+        }
+        &:hover{
+            &::after{
+                top: 0;
+            }
+        }
+        span{
+            position: relative;
+            z-index: 3;
+        }
+    }
+}
